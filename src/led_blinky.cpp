@@ -2,6 +2,7 @@
 
 void led_blinky(void *pvParameters){
     pinMode(LED_GPIO, OUTPUT);
+    Serial.println("LED blinky task started");
   
   while(1) {                        
     digitalWrite(LED_GPIO, HIGH);  // turn the LED ON
